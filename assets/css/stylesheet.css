@@ -69,7 +69,7 @@ h2 {
     left: 140px;
 }
 
-#work {
+.work {
     display: flexbox;
     position: relative;
     bottom: 155px;
@@ -87,23 +87,31 @@ div h2{
     display:flexbox;
     border: var(--accent) solid 4px;
     text-align: center;
-    line-height: 3em;
+    line-height: 5em;
     background-image: url(https://img.freepik.com/free-vector/education-pattern_1061-494.jpg?w=1480&t=st=1675755646~exp=1675756246~hmac=28bd90b5b06d6e413adf5f8b109b91de655992ef53a9d209bb6a0fcfa3b65a2e)
 }
 
 mark{
     border: 2px solid var(--accent);
+    padding:3px;
     background-color: var(--back);
 }
 
-hr {
-    background-color: var(--accent) solid 4px;
-}
 
-#work h3 {
+.work h3 {
     display:flexbox;
     border: var(--accent) solid 4px;
     text-align: center;
-    line-height: 2em;
+    line-height: 5em;
+}
+.work #main {
+    line-height: 6em;
+    font-size: 1.2em;
 }
 
+#form {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall_%28cropped%29.jpg/1000px-Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall_%28cropped%29.jpg)
+}
+ #seo {
+    background-image: url(https://media.istockphoto.com/vectors/raised-arms-of-diverse-and-multiethnic-business-people-holding-a-vector-id1339256703?b=1&k=20&m=1339256703&s=612x612&w=0&h=pyZ3c0QJe1nsCu_eDatGjHlNSVQWuEEeVWVPqIEAs3I=);
+ }
