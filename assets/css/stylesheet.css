@@ -1,6 +1,84 @@
-header nav ul li {
-    display:block;
+
+:root{
+    --back: #E4CDE3;
+    --accent: #C47BC6;
+    --blank: #FFFFFF;
 }
-header nav ul li {
-    display:inline-block;
+*{
+   
+}
+ body {
+    font-size: 20px;
+ }
+#top {
+    display: block;
+    border: 5px solid var(--accent);
+    padding: 8px;
+    background-color: var(--back);
+}
+
+h1{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+header h2{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+body header nav ul {
+    display:flex-box;
+    border: 2px;
+}
+
+body header nav ul li {
+    border-bottom: 2px black solid;
+    display:block;
+    line-height:1.5em;
+    text-align: center;
+    color: black;
+}
+
+body header nav ul li:nth-child(even) {
+    background-color:var(--back);
+}
+
+h2 {
+    font-size: 1.25em;
+    font-weight: 600;
+    margin:15px;
+}
+
+
+#about-me img{
+    width:30%;
+    border-radius: 10%;
+    margin-left:10px;
+    position: relative;
+    bottom:8px;
+}
+
+#about-me p {
+    display:flexbox;
+    width: 60%;
+    font-size: .85em;
+    text-align:center;
+    position: relative;
+    bottom: 180px;
+    left: 140px;
+}
+
+#work h2{
+    text-align: right;
+}
+
+#main {
+    display:flexbox;
+    justify-content: left;
+    background-color: var(--accent);
+    text-align: center;
+    line-height: 2em;
+    background-image: url(https://img.freepik.com/free-vector/education-pattern_1061-494.jpg?w=1480&t=st=1675755646~exp=1675756246~hmac=28bd90b5b06d6e413adf5f8b109b91de655992ef53a9d209bb6a0fcfa3b65a2e)
+
 }
