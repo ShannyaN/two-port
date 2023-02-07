@@ -69,16 +69,41 @@ h2 {
     left: 140px;
 }
 
-#work h2{
-    text-align: right;
+#work {
+    display: flexbox;
+    position: relative;
+    bottom: 155px;
+}
+div h2{
+    display:flexbox;
+    position: relative;
+    bottom:155px;
+    text-align: center;
+    padding-top: 15px;
+    border-top: solid var(--accent) 4px;
 }
 
 #main {
     display:flexbox;
-    justify-content: left;
-    background-color: var(--accent);
+    border: var(--accent) solid 4px;
+    text-align: center;
+    line-height: 3em;
+    background-image: url(https://img.freepik.com/free-vector/education-pattern_1061-494.jpg?w=1480&t=st=1675755646~exp=1675756246~hmac=28bd90b5b06d6e413adf5f8b109b91de655992ef53a9d209bb6a0fcfa3b65a2e)
+}
+
+mark{
+    border: 2px solid var(--accent);
+    background-color: var(--back);
+}
+
+hr {
+    background-color: var(--accent) solid 4px;
+}
+
+#work h3 {
+    display:flexbox;
+    border: var(--accent) solid 4px;
     text-align: center;
     line-height: 2em;
-    background-image: url(https://img.freepik.com/free-vector/education-pattern_1061-494.jpg?w=1480&t=st=1675755646~exp=1675756246~hmac=28bd90b5b06d6e413adf5f8b109b91de655992ef53a9d209bb6a0fcfa3b65a2e)
-
 }
+
