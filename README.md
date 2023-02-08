@@ -28,3 +28,7 @@ I would add JavaScript to the site when learned to make it more interactive and 
 
 ## Project status
 In progress.
+
+## Links
+Deployed Site: https://shannyan.github.io/two-port/
+Repo: https://github.com/ShannyaN/two-port
