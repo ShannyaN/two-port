@@ -27,7 +27,6 @@
     color: black;
     border: 5px solid var(--accent);
     padding: 6px;
-    margin:0;
     background-image: url(https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Ff6065475-435e-4bca-bdb4-9b4f95a93ea3.jpg?fit=scale-down&source=next&width=700);
     background-size:cover;
 }
@@ -207,10 +206,9 @@ footer {
         box-sizing:border-box;
         max-width: 100%;
         width: 100%;
-        margin:0;
-        padding:0;
-    }
 
+    }
+    
     h1 { font-size: 2.5em;}
     h2 {font-size: 2em}
     
@@ -326,7 +324,7 @@ footer {
     /* expansion when mouse hovers */
 
     .work h3:hover {
-        transform: scale(1.2);
+        transform: scale(1.3);
     }
     
     #contact ul li {
