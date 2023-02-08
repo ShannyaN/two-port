@@ -20,7 +20,7 @@
     padding:0;
  }
 
- /* Hero formattin */
+ /* Hero formattig */
 
 #top {
    display:block;
@@ -65,11 +65,15 @@ body header nav ul li {
     color: black;
 }
 
-body header nav ul li:nth-child(even) {
+body header nav ul li:nth-child(even) { /* add color to every other nav link */
     background-color:var(--back);
 }
 
-a:link {
+a:link {  /* getting rid of the built-in link formatting */
+    text-decoration: none;
+    color:black;
+}
+a:visited {
     text-decoration: none;
     color:black;
 }
@@ -124,7 +128,7 @@ div h2{
     background-image: url(https://img.freepik.com/free-vector/education-pattern_1061-494.jpg?w=1480&t=st=1675755646~exp=1675756246~hmac=28bd90b5b06d6e413adf5f8b109b91de655992ef53a9d209bb6a0fcfa3b65a2e)
 }
 
-mark{
+mark{ /* re-formatted traditional highlighting */
     border: 2px solid var(--accent);
     padding:2px;
     background-color: var(--back);
@@ -149,7 +153,9 @@ mark{
 
 /* Backgroud images */
 #form {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall_%28cropped%29.jpg/1000px-Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall_%28cropped%29.jpg)
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall_%28cropped%29.jpg/1000px-Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall_%28cropped%29.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
  #seo {
     background-image: url(https://media.istockphoto.com/vectors/raised-arms-of-diverse-and-multiethnic-business-people-holding-a-vector-id1339256703?b=1&k=20&m=1339256703&s=612x612&w=0&h=pyZ3c0QJe1nsCu_eDatGjHlNSVQWuEEeVWVPqIEAs3I=);
@@ -157,10 +163,14 @@ mark{
  
  #chtsht {
     background-image: url(https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2021/06/CSS-3-Cheatsheet-04.png);
+    background-repeat: no-repeat;
+    background-size: cover;
  }
  #tbd {
     background-image: url(https://miro.medium.com/max/775/0*rZecOAy_WVr16810);
- }
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* Contact */
  #contact { 
@@ -191,14 +201,7 @@ footer {
     text-align: center;
 }
 
-/* Actions */
-
-/*links*/
-a:visited {
-    text-decoration: none;
-    color:black;
-}
-
+/* iPad portrait min */
 @media screen and (min-width: 768px) {
     * {
         box-sizing:border-box;
@@ -216,6 +219,7 @@ a:visited {
         font-weight: 700;
     }
 
+    /* nav to show in single row*/
     body header nav ul {
         display:inline-flex;
     }
@@ -261,7 +265,7 @@ a:visited {
         bottom: 250px;
     }
     .work h3 {
-        line-height: 6em;
+        line-height: 5em;
     }
     .work #main {
         line-height: 8em;
@@ -277,6 +281,7 @@ a:visited {
     }
 
 }
+/* lansdscape tablet/desktop*/
 @media screen and (min-width: 1100px) {
     * {
         max-width: 100%;
@@ -317,6 +322,8 @@ a:visited {
         width:100%;
         justify-self: center;
     }
+
+    /* expansion when mouse hovers */
 
     .work h3:hover {
         transform: scale(1.2);
