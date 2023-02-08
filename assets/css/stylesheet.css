@@ -29,6 +29,7 @@
     padding: 6px;
     margin:0;
     background-image: url(https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Ff6065475-435e-4bca-bdb4-9b4f95a93ea3.jpg?fit=scale-down&source=next&width=700);
+    background-size:cover;
 }
 
 #top mark {
@@ -125,7 +126,7 @@ div h2{
 
 mark{
     border: 2px solid var(--accent);
-    padding:3px;
+    padding:2px;
     background-color: var(--back);
 }
 
@@ -136,6 +137,7 @@ mark{
     text-align: center;
     line-height: 5em;
     margin: 8px;
+    
 }
 .work #main {
     line-height: 6em;
@@ -164,8 +166,6 @@ mark{
  #contact { 
     display:flexbox;
     background-color: var(--back);
-    position: relative;
-    bottom:125px;
     text-align: center;
     border: dotted var(--accent) 3px;
     font-size: .8em;
@@ -178,10 +178,6 @@ mark{
 }
 
 #contact ul li::before {
-    content: " 🎀 ";
-} 
-
-#contact ul li::after {
     content: " 🎀 ";
 } 
 
@@ -271,6 +267,15 @@ a:visited {
         line-height: 8em;
         font-size: 1.8em;
     }
+
+
+    #contact ul {
+        display: inline;
+    }
+    #contact ul li {
+        display: flex-box;
+    }
+
 }
 @media screen and (min-width: 1100px) {
     * {
@@ -291,3 +296,38 @@ a:visited {
         bottom: 300px;
         left: 37%;
     }
+
+    div h2 {
+        position: relative;
+        top: 20px;
+    }
+    .work{
+        position: relative;
+        top: 30px;
+    }
+    .work h3 {
+        transition:.5s;
+        width:100%;
+        display:flex-box;
+        flex-flow: wrap row;
+        transition: .8s;
+        font-size: 1.5em;
+    }
+    #main{
+        width:100%;
+        justify-self: center;
+    }
+
+    .work h3:hover {
+        transform: scale(1.2);
+    }
+    
+    #contact ul li {
+        display: inline;
+        font-size: 1.3em;
+    }
+   
+    #contact h2 {
+        line-height: 1.5em;
+    }
+}
